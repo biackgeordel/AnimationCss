@@ -1,0 +1,11 @@
+{
+  "name": "animationcss",
+  "version": "1.0.0",
+  "description": "cours d'animation en css",
+  "main": "index.js",
+  "scripts": {
+    "sass": " sass --watch ./css/main.scss:./css/main.css"
+  },
+  "author": "biakabakana odilon",
+  "license": "ISC"
+}
