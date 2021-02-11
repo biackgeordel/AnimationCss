@@ -315,6 +315,13 @@ p .hide + .test {
   margin-bottom: 1vw;
   overflow: hidden;
   display: flex;
+  z-index: 1000;
+}
+.plat:hover .titre {
+  width: 24vw;
+}
+.plat:hover .extension span:nth-child(2) > i {
+  transform: rotate(360deg);
 }
 .plat .titre {
   width: 35vw;
@@ -325,25 +332,20 @@ p .hide + .test {
   text-overflow: ellipsis;
   transition: width 0.7s ease-in-out;
 }
-.plat .titre:hover {
-  width: 24vw;
-}
-.plat .titre:hover + .extension span:nth-child(2) > i {
-  transform: rotate(360deg);
-}
-.plat .extension {
+
+.extension {
   width: 4.2vw;
   text-align: right;
   white-space: nowrap;
 }
-.plat .extension span {
+.extension span {
   display: inline-block;
   padding-top: 2.1vw;
   width: 4vw;
   text-align: center;
   height: 7vw;
 }
-.plat .extension span:nth-child(2) {
+.extension span:nth-child(2) {
   color: white;
   background: #15DEA5;
   border-top-right-radius: 2vw;
@@ -351,9 +353,9 @@ p .hide + .test {
   width: 7vw;
   font-size: 2vw;
 }
-.plat .extension span:nth-child(2) i {
+.extension span:nth-child(2) i {
   transform: rotate(0deg);
-  transition: transform 0.9s ease-in-out;
+  transition: transform 0.8s ease-in-out 0.05s;
 }
 
 /*# sourceMappingURL=main.css.map */

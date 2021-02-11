@@ -363,6 +363,18 @@ p{
        margin-bottom:1vw;
        overflow: hidden;
       display: flex;
+      z-index:1000;
+      &:hover{
+        & .titre{
+            width:24vw;
+        }
+        .extension{
+            span:nth-child(2)>i{
+                transform:rotate(360deg);
+            }
+
+      }
+    }
      
       
        .titre{
@@ -372,18 +384,13 @@ p{
             padding-top:1vw;
             padding-left:1vw;
             text-overflow: ellipsis;
-            transition:width .7s ease-in-out;
-            &:hover{
-                width:24vw;
+            transition:width .7s ease-in-out;    
             }
-            &:hover +.extension{
-                span:nth-child(2)>i{
-                    transform:rotate(360deg);
-                }
+           
 
           
         }
-       }
+       
        
        .extension{
            width:4.2vw;
@@ -405,7 +412,7 @@ p{
                font-size:2vw;
                i{
                    transform:rotate(0deg);
-                   transition:transform 0.9s ease-in-out;
+                   transition:transform 0.8s ease-in-out .05s;
                }
               
            }
@@ -413,7 +420,7 @@ p{
           
        }
     
-   }
+   
   
    
 
